@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "🚀 Iniciando restauração..."
+echo "Installing..."
 
 
 sudo apt update
@@ -26,4 +26,4 @@ ln -sf ~/dotfiles/starship.toml ~/.config/starship.toml
 
 
 tldr --update
-echo "✅ Pronto! Copie o hyper.js manualmente para o Windows."
+echo "Done."

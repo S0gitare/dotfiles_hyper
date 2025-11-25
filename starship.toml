@@ -1,4 +1,4 @@
-# Define a ordem: Usuario -> "in" Pasta -> "on" Git -> Pula Linha -> Seta
+
 format = """
 $username\
 $directory\
@@ -7,30 +7,30 @@ $git_status\
 $line_break\
 $character"""
 
-# Aumenta o tempo para evitar aquele aviso de timeout
+
 command_timeout = 1000
 
-# 1. Configuração do USUÁRIO (Amarelo)
+
 [username]
 style_user = "yellow bold"
 show_always = true
 format = "[$user]($style)"
 
-# 2. Configuração da PASTA (Azul com o "in" antes)
+
 [directory]
 style = "blue bold"
 format = " in [$path]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
-# 3. Configuração do GIT (Branco com o "on" antes e o losango)
+
 [git_branch]
 symbol = "❖ "
 style = "white bold"
-# O "on" só aparece se estiver num repositório git
+
 format = " on [$symbol$branch]($style)"
 
-# 4. Configuração da SETINHA (Verde na linha de baixo)
+
 [character]
 success_symbol = "[❯](green bold)"
 error_symbol = "[❯](red bold)"
